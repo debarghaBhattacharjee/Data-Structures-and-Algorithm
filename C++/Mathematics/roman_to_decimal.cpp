@@ -77,7 +77,7 @@ int roman_to_decimal(const string &roman) {
     return decimal;
 }
 
-// Driver program
+// Driver code
 int main(){
 
     #ifndef ONLINE_JUDGE

@@ -72,7 +72,7 @@ def roman_to_decimal(roman: str) -> int:
             i = i + 1
     return decimal
     
-# Driver program
+# Driver code
 if __name__ == "__main__": 
     roman = str(input("input: "))
     decimal = roman_to_decimal(roman)
