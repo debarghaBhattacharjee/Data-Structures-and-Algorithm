@@ -1,4 +1,4 @@
-// PROBLEM STATEMENT: A simple BFS implementation in C++.
+// PROBLEM STATEMENT: A simple Breadth First Traversal (BFT) implementation in C++.
 
 #include <iostream>
 #include <vector>
@@ -28,7 +28,6 @@ void bfs(int s) {
         int f = q.front();
         cout << f << " -> ";
         q.pop();
-
         for(auto i=graph[f].begin(); i!=graph[f].end(); i++) {
             if(visited[*i] == false) {
                 q.push(*i);
@@ -64,7 +63,7 @@ int main(){
         add_edge(u, v);
     }
 
-    // Traverse through the graph using BFS method.
+    // Traverse through the graph using BFT method.
     for(int s=0; s<num_vertices; s++) {
         // If the visited for the given node is False,
         // it means that node hasn't been visited yet.
