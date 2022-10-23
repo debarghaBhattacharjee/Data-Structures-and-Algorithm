@@ -8,11 +8,10 @@ using namespace std;
 // Visited vector to keep track of whether a 
 // give vertex (or node) has been visited or not.
 vector<bool> visited;
-// Vector-based template to represent the graph.
+// Vector-based template to represent the graph as
+// a adjacency list.
 vector<vector<int>> graph;
 // Method to add new edge to the existing graph.
-// Here, each node and its immediate neighbours form
-// a unique vector for the given graph.
 void add_edge(int u, int v) {
     graph[u].push_back(v);
     return;
